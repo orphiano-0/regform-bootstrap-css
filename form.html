@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>JQuery Part II</title>
+
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function(){
+            $("#regButton").click(function(){
+                var uName = $("#inputuName").val();
+                var eMail = $("#inputEmail").val();
+                var pass = $("#inputPass").val();
+                var conPass = $("#inputConPass").val();
+				
+				alert("You input the following information: " + "\nUsername: " + uName + "\nEmail: " + eMail + "\nPassword: " + pass);
+				
+				console.log("Username: " + uName);
+				console.log("Email: " + eMail);
+				console.log("Password: " + pass);
+            });
+        });
+        </script>
+
+</head>
+<body>
+    <div class="container ">
+		<span class="header-line"></span>
+		<div class="row text-center">
+        	<div class="col-sm-12">
+        		<h2 class="title">Registration Form</h2>
+                <h3 class="subtitle">Join Us Now!</h3>
+				<span class="bottom-line"></span>
+        	</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 offset-3">
+	            <form class="">
+		            <div class="row">
+		            	<div class="col-sm 6">
+		            		<div class="form-group">
+								<label for="inputName" id="" class="">Username <span class="marks">*</span></label>
+					            <input type="name" id="inputuName" class="form-control" placeholder="Gabriel Orphiano" required autofocus>
+				            </div>
+						</div>
+		            </div>
+		            <div class="row">
+		            	<div class="col-sm 6">
+		            		<div class="form-group">
+					            <label for="inputEmail" id="" class="">Email <span class="marks">*</span></label>
+					            <input type="email" id="inputEmail" class="form-control" placeholder="gabriel.orphiano@gmail.com" required autofocus>
+				            </div>
+						</div>
+		            </div>
+                    <div class="row">
+		            	<div class="col-sm 6">
+		            		<div class="form-group">
+					            <label for="inputPassword" id="" class="">Password <span class="marks">*</span></label>
+					            <input type="password" id="inputPass" class="form-control" placeholder="********" required autofocus>
+				            </div>
+						</div>
+		            </div>
+                    <div class="row">
+		            	<div class="col-sm 6">
+		            		<div class="form-group">
+					            <label for="inputConfirmPassword" id="" class="">Confirm Password <span class="marks">*</span></label>
+					            <input type="password" id="inputConPass" class="form-control" placeholder="********" required autofocus>
+				            </div>
+						</div>
+		            </div>
+		            <div class="row">
+		            	<div class="col-sm 6">
+		            		<div class="form-group">
+								<label for="inputProjectInfo" id="" class="">Additional Information <span class="marks">*</span></label>
+								<textarea type="text" id="" class="form-control" placeholder="" id="addInfo"></textarea>
+				            </div>
+						</div>
+		            </div>
+		            <div class="row">
+		            	<div class="col-sm 6">
+		            		<div class="form-group">
+								
+				            </div>
+						</div>
+		            </div>
+		            <div class="row">
+		            	<div class="col-sm 6 text-center position-relative top-50 start-50 translate-middle">
+		            		<div class="form-group">
+								<button class="btn btn-primary btn-lg btn-block" type="submit" id="regButton">Register</button>
+				            </div>
+						</div>
+		            </div>
+	            </form>
+	        </div>      
+        </div>
+    </div>
+</body>
+</html>

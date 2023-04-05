@@ -1,0 +1,44 @@
+html {
+    background-image: url(loFi.gif);
+    size: cover;
+    padding: 2.5em;
+    margin: 2.5em;
+}
+.container {
+    background: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    width: 100%;
+    color: white;
+    padding: 0 !important;
+}
+.header-line {
+    background-color: linear-gradient(to right, #DECBA4, #3E5151);
+    padding: 0.8em;
+    display: block;
+    width: inherit;
+    filter: brightness(10%);
+}
+.subtitle {
+    font-size: 20px;
+}
+#regButton{
+    background: linear-gradient(to right, #c5bfb2, #3E5151);
+    border: #ebb7b7;
+    width: 80%;
+    height: 50%;
+}
+#regButton:hover{
+    background-image: linear-gradient(90deg, #249ebd 0%, #dfd6ab 50%, #551523 75%, #8c989c 100%);
+    color: #000;
+}
+.row {
+    padding: 1em;
+}
+.marks {
+    color: #F50057;
+}
+
+@media (min-width: 1400px){
+    .container {
+        max-width: 100%;
+    }
+}
