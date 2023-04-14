@@ -9,14 +9,14 @@
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>JQuery Part II</title>
+    <title>Connecting HTML to Firebase</title>
 
     <script type = "text/javascript" language = "javascript">
         $(document).ready(function(){
             $("#regButton").click(function(){
-                var uName = $("#inputName").val();
-                var eMail = $("#inputEmail").val();
-                var pass = $("#inputPass").val();
+                var uName = $("#name").val();
+                var eMail = $("#emailid").val();
+                var pass = $("#pass").val();
 				
 				alert("You input the following information: " + "\nUsername: " + uName + "\nEmail: " + eMail + "\nPassword: " + pass);
 				
@@ -40,12 +40,12 @@
         </div>
         <div class="row">
             <div class="col-sm-6 offset-3">
-	            <form class="">
+	            <form class="" id="contactForm">
 		            <div class="row">
 		            	<div class="col-sm 6">
 		            		<div class="form-group">
 								<label for="inputName" id="" class="">Username <span class="marks">*</span></label>
-					            <input type="name" id="inputName" class="form-control" placeholder="Gabriel Orphiano" required autofocus>
+					            <input type="name" id="name" class="form-control" placeholder="Gabriel Orphiano" required autofocus>
 				            </div>
 						</div>
 		            </div>
@@ -53,7 +53,7 @@
 		            	<div class="col-sm 6">
 		            		<div class="form-group">
 					            <label for="inputEmail" id="" class="">Email <span class="marks">*</span></label>
-					            <input type="email" id="inputEmail" class="form-control" placeholder="gabriel.orphiano@gmail.com" required autofocus>
+					            <input type="email" id="emailid" class="form-control" placeholder="gabriel.orphiano@gmail.com" required autofocus>
 				            </div>
 						</div>
 		            </div>
@@ -61,7 +61,7 @@
 		            	<div class="col-sm 6">
 		            		<div class="form-group">
 					            <label for="inputPassword" id="" class="">Password <span class="marks">*</span></label>
-					            <input type="password" id="inputPass" class="form-control" placeholder="********" required autofocus>
+					            <input type="password" id="pass" class="form-control" placeholder="********" required autofocus>
 				            </div>
 						</div>
 		            </div>
@@ -69,7 +69,7 @@
 		            	<div class="col-sm 6">
 		            		<div class="form-group">
 					            <label for="inputConfirmPassword" id="" class="">Confirm Password <span class="marks">*</span></label>
-					            <input type="password" id="inputConPass" class="form-control" placeholder="********" required autofocus>
+					            <input type="password" id="conpass" class="form-control" placeholder="********" required autofocus>
 				            </div>
 						</div>
 		            </div>
@@ -77,7 +77,7 @@
 		            	<div class="col-sm 6">
 		            		<div class="form-group">
 								<label for="inputProjectInfo" id="" class="">Additional Information <span class="marks">*</span></label>
-								<textarea type="text" id="" class="form-control" placeholder="" id="addInfo" required autofocus></textarea>
+								<textarea type="text" id="msgContent" class="form-control" placeholder="" id="addInfo" required autofocus></textarea>
 				            </div>
 						</div>
 		            </div>
@@ -100,4 +100,6 @@
         </div>
     </div>
 </body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+	<script src="./mail.js"></script>
 </html>
